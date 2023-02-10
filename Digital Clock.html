@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/OOjs_UI_icon_clock-destructive.svg/1200px-OOjs_UI_icon_clock-destructive.svg.png">
+    <title>Jam Digital</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    html {
+        height: 100%;
+        overflow: hidden;
+    }
+    #teks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30vh 0px 10px 0px;
+        color: #E34234;
+    }
+    #jam {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        left: 44.25vw;
+        width: 175px;
+        height: 50px;
+        border-radius: 10px;
+        background: #E34234;
+        color: white;
+    }
+</style>
+<body>
+    <h1 id="teks"></h1>
+    <div id="jam"></div>
+</body>
+<script>
+    setInterval(()=>{
+        const waktu = new Date();
+        const jam = waktu.getHours();
+        const menit = waktu.getMinutes();
+        const detik = waktu.getSeconds();
+        document.getElementById("jam").innerHTML = jam + " : " + menit + " : " + detik;
+    }, 1000)
+
+    const waktu = new Date().getHours();
+    const pagi = waktu > 6 && waktu < 20;
+    if(pagi === true){
+        document.getElementById("teks").innerHTML = "Good Day";
+    } else {
+        document.getElementById("teks").innerHTML = "Good Night";
+    }
+</script>
+</html>
