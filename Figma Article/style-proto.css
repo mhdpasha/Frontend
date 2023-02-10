@@ -1,0 +1,136 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A; 
+    color: #EDF0F1;
+}
+
+pre {
+    margin-bottom: 60px;
+}
+
+li, a {
+    font-weight: 500;
+    padding-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 30px 10%;
+}
+
+nav {
+    margin: 0;
+}
+
+.navi {
+    list-style: none;
+}
+
+.navi li {
+    display: inline-block;
+    padding: 6px 20px;
+}
+
+.navi li a {
+    transition: all 0.3 ease 0s;
+}
+
+.navi li a:hover {
+    color: #f0d002;
+}
+
+button {
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 16px;
+    color: #24252A;
+    padding: 9px 30px;
+    background-color: #f0d002;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover {
+    background-color: #d3bc2c;
+}
+
+.content {
+    padding: 30px 10%;
+    text-align: justify;
+}
+
+#img-content {
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+#comment {
+    
+    border-bottom: 3px solid #d3bc2c;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#text-field {
+    width: 500px;
+    background: none;
+    color: #EDF0F1;
+    padding: 10px;
+    border: 1px solid #EDF0F1;
+    border-radius: 20px;
+    pointer-events: painted color ;
+}
+
+#text-field:hover {
+    border-color: #d3bc2c;
+}
+
+#submit-field {
+    font-weight: bolder;
+    font-size: 15px;
+    width: 150px;
+    height: 35px;
+    background: #EDF0F1;
+    color: #24252A;
+    cursor: pointer;
+    border: 1px solid #EDF0F1;
+    border-radius: 20px;
+}
+
+#submit-field:hover {
+    background-color: #d3bc2c;
+    border: 1px solid #d3bc2c;
+}
+
+.comment-box {
+    box-sizing: border-box;
+    margin-top: 200px;
+}
+
+footer {
+    margin-top: 150px;
+    color: #EDF0F1;
+    font-size: 13px;
+    opacity: 100%;   
+}
+
+.paragh {
+    border: none;
+}
+
+.paragh p {
+    font-size: bolder;
+    color: #24252A;
+    background: #d3bc2c;
+    height: 50px;
+    padding-top: 15px;
+}
