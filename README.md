@@ -1,2 +1,2 @@
 # Static Article
-An example of my static article website about Figma
+An example of my static website article about Figma
