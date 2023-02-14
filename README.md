@@ -1,2 +1,2 @@
-# Frontend
-Just a simple personal project and prototype testing dump
+# Static Article
+An example of my static article website about Figma
